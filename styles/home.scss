@@ -1,3 +1,41 @@
-h1 {
-  color: tomato;
+html {
+  --primary-color: #6200ee;
+  --primary-variant: #3700b3;
+  --secondary-color: #03dac6;
+  --secondary-variant: #018786;
+  --error-color: #c51162;
+  --primary-text: #fff;
+  --secondary-text: #000;
+  --error-text: #fff;
+}
+
+.btn {
+  border: 1px solid var(--primary-variant);
+  border-radius: 0.25em;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #000;
+  text-decoration: none;
+
+  &.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+  }
+
+  &.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text);
+  }
+
+  &.btn-danger {
+    background-color: var(--error-color);
+    color: var(--error-text);
+  }
+
+  &.disabled {
+    cursor: default;
+    background-color: #ccc;
+    color: #fff;
+    border-color: #ccc;
+  }
 }
